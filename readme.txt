@@ -7,10 +7,11 @@ git commit -m "initial commit"
 git status
 git remote add origin https://github.com/apoleptika/tcmb-currency-exchange-rates.git
 // git push -u origin master
-// artık main kullanılıyor
+// *** artık main kullanılıyor ***
 //git push -u origin main
 
 //git push ... Use web browser for Github authentication 
+// dosyaları resetlemek için 
 //git checkout .
 //git restore .
 
