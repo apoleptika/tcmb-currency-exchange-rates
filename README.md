@@ -3,10 +3,8 @@
 This simple Python app helping to get information from Central Bank of the Republic of Türkiye. <br/> 
 App reads today's currency exchange rates.  <br/>
  **c:\> python currency.py** <br/><br/>
-
 App reads specific date currency exchange rates. <br/>
  **c:\> python currency.py -f 23.08.2022** <br/><br/> 
-
 App reads currency exchange rates of two dates and calculating % increase/deacrease between two values.<br/>
  **c:\> python currency.py -f 17.12.2022 -l 19.01.2022** <br/></br>
 
