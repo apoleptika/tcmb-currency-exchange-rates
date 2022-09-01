@@ -19,8 +19,8 @@ This is happen mostly on weekends and public holidays. <br/>
 TCMB Currency Exchange Rates Url :  https://www.tcmb.gov.tr/kurlar/202112/17122021.xml  <br/>
 15.01.2022 - last date data is NOT OK. <br/>
 **Error.** Central Bank of the Republic of Türkiye, no data on this date, 15.01.2022  <br/><br/>
-Aldin Romanov Aldinov <br /> <br /> 
-
 <picture>
     <img alt="Central Bank of the Republic of Türkiye and exchange rates" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/tcmb-currency-exchange-rates.png">
 </picture>
+
+Aldin Romanov Aldinov <br /> 
