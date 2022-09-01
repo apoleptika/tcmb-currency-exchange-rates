@@ -1,8 +1,8 @@
 ## Türkiye Cumhuriyeti Merkez Bankası ve döviz kurları
 ## Central Bank of the Republic of Türkiye and exchange rates
 
-Before start to using this Python app, you have to install Python and 2 packages <br/>
- **download and install Python 3.10 from https://www.python.org/downloads/**
+Before start to using this Python app, you have to install Python and 2 packages. <br/>
+ **download and install Python 3.10 from https://www.python.org/downloads/** <br/>
  **pip install tabulate** <br/>
  **pip install pandas** <br/><br/>
 This simple Python app helping to get information from Central Bank of the Republic of Türkiye. <br/> 
