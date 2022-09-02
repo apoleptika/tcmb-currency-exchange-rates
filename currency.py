@@ -18,6 +18,9 @@ date2 = ""
 # create empty list
 first_currency_list = []
 last_currency_list = []
+first_gold_list = []
+last_gold_list = []
+
 # url = urlopen('https://www.tcmb.gov.tr/kurlar/202112/01122021.xml')
 url = 'https://www.tcmb.gov.tr/kurlar/'
 
@@ -26,7 +29,7 @@ def firstdate_get_data():
     date1 = datetime.strptime(param.firstdate, '%d.%m.%Y')
     year_month = str(date1.year) + f'{date1.month:02d}'
     day_month_year = f'{date1.day:02d}' +  f'{date1.month:02d}' + f'{date1.year}' + ".xml"  
-    global data_url
+    # global url
     data_url = url + year_month +'/'+ day_month_year
         
     try:
@@ -84,6 +87,9 @@ def lastdate_get_data():
         last_currency_list.append([code, name, forex_selling])
 
 
+# --------------------------------------------------------------
+# Central Bank of the Republic of Türkiye and exchange rates
+# --------------------------------------------------------------
 # create empty Pandas data frames
 panda_df1 = pd.DataFrame()
 panda_df2 = pd.DataFrame()
@@ -112,13 +118,16 @@ else:
 if (param.firstdate) and (param.lastdate):
     result_df = pd.merge(panda_df1, panda_df2, how="left", on=["Code"])
     # create calculated column in Pandas Data Frame
-    result_df['Percent %'] = ((result_df['NewValue'].astype(float) / result_df['OldValue'].astype(float) ) -1) *100
+    # result_df['Percent %'] = ((result_df['NewValue'].astype(float) / result_df['OldValue'].astype(float) ) -1) *100
+    result_df['% (+|-)'] = ((result_df['NewValue'].astype(float) / result_df['OldValue'].astype(float) ) -1) *100
     print("")
-    print(tabulate(result_df, headers=["Code", "Name", "OldValue TL", "NevValue TL", "Percent %"], tablefmt="simple"))
+    # print(tabulate(result_df, headers=["Code", "Name", "FirstValue TL", "LastValue TL", "Percent %"], tablefmt="simple"))
+    # print(tabulate(result_df, headers=["Code", "Name", "OldValue TL", "NevValue TL", "Percent %"], tablefmt="simple"))
+    print(tabulate(result_df, headers=["Code", "Name", "OldValue TL", "NevValue TL", '% (+|-)'], tablefmt="simple", numalign="right"))
     print("")
 
 if (param.firstdate) and (not param.lastdate):
     print("")
-    print(tabulate(panda_df1, headers=["Code", "Name", "Value TL"], tablefmt="simple"))
+    print(tabulate(panda_df1, headers=["Code", "Name", "Value TL"], tablefmt="simple", numalign="right"))
     print("")
 
