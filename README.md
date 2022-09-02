@@ -1,5 +1,5 @@
-## Türkiye Cumhuriyeti Merkez Bankası ve döviz kurları ve <br/> Altın, Gümüş, Platin, Palladium fiyatları
-## Central Bank of the Republic of Türkiye and exchange rates and <br/> Gold, Silver, Platinum, Palladium prices
+## Türkiye Cumhuriyeti Merkez Bankası döviz kurları ve <br/> Altın, Gümüş, Platin ve Palladium fiyatları
+## Central Bank of the Republic of Türkiye exchange rates and <br/> Gold, Silver, Platinum and Palladium prices
 
 Before start to using this Python app, you have to install Python and 2 packages. <br/>
  **download and install Python 3.10 from https://www.python.org/downloads/** <br/>
