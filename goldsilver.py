@@ -127,6 +127,7 @@ if (param.firstdate) and (not param.lastdate):
     print("")
     print(tabulate(panda_gold_df1, headers=["Symbol", "Name", "1 Ounce USD", "1 Gram USD"], tablefmt="simple", numalign="right"))
     print("")    
+    
 
 # 0 oz	0 Grams	
 # 1 oz	31.103 Grams	

@@ -131,3 +131,4 @@ if (param.firstdate) and (not param.lastdate):
     print(tabulate(panda_df1, headers=["Code", "Name", "Value TL"], tablefmt="simple", numalign="right"))
     print("")
 
+

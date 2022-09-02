@@ -1,5 +1,5 @@
-## Türkiye Cumhuriyeti Merkez Bankası ve döviz kurları ve Altın, Gümüş, Platin, Palladium fiyatları
-## Central Bank of the Republic of Türkiye and exchange rates and Gold, Silver, Platinum, Palladium prices
+## Türkiye Cumhuriyeti Merkez Bankası ve döviz kurları ve <br/> Altın, Gümüş, Platin, Palladium fiyatları
+## Central Bank of the Republic of Türkiye and exchange rates and <br/> Gold, Silver, Platinum, Palladium prices
 
 Before start to using this Python app, you have to install Python and 2 packages. <br/>
  **download and install Python 3.10 from https://www.python.org/downloads/** <br/>
@@ -24,7 +24,7 @@ TCMB Currency Exchange Rates Url :  https://www.tcmb.gov.tr/kurlar/202112/171220
     <img alt="Central Bank of the Republic of Türkiye and exchange rates" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/tcmb-currency-exchange-rates.png">
 </picture>
 
-You can also check gold and silver prices with another application.<br/>
+You can also check **gold and silver** prices with another application.<br/>
 For today's gold and silver prices. <br/>
 **c:\> python goldsilver.py** <br/><br/>
 For gold and silver prices for a given day. <br/>
@@ -32,7 +32,7 @@ For gold and silver prices for a given day. <br/>
 For gold and silver prices on two different dates <br />
 **c:\> python goldsilver.py -f 05.01.2021 -l 30.08.2022** <br/><br/>
 <picture>
-    <img alt="Gold and Silver prices" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/tcmb-currency-exchange-rates.png">
+    <img alt="Gold and Silver prices" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/gold-silver-prices.png">
 </picture>
 
 
