@@ -20,7 +20,6 @@ This is happen mostly on weekends and public holidays. <br/>
 TCMB Currency Exchange Rates Url :  https://www.tcmb.gov.tr/kurlar/202112/17122021.xml  <br/>
 15.01.2022 - last date data is NOT OK. <br/>
 **Error.** Central Bank of the Republic of Türkiye, no data on this date, 15.01.2022  <br/><br/>
-
 You can also check **GOLD and SILVER** prices with another application.<br/>
 For today's gold and silver prices. <br/>
 **c:\> python goldsilver.py** <br/><br/>
