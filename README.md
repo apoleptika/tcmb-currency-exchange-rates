@@ -3,8 +3,8 @@
 
 Before start to using this Python app, you have to install Python and 2 packages. <br/>
  **download and install Python 3.10 from https://www.python.org/downloads/** <br/>
- **pip install tabulate** <br/>
- **pip install pandas** <br/><br/>
+ **c:\> pip install tabulate** <br/>
+ **c:\> pip install pandas** <br/><br/>
 This simple Python app helping to get information from Central Bank of the Republic of Türkiye. <br/> 
 App reads today's currency exchange rates.  <br/>
  **c:\> python currency.py** <br/><br/>
@@ -38,5 +38,3 @@ Gold and Silver example:
     <img alt="Gold and Silver prices" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/gold-silver-prices.png">
 </picture>
 
-
-Aldin Romanov Aldinov <br /> 
