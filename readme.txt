@@ -14,13 +14,16 @@ git remote add origin https://github.com/apoleptika/tcmb-currency-exchange-rates
 git pull origin main
 git push -f origin main
 
-*****************************
+
+*******************************
 dosyayı güncelle, status ie kontrol et, add ile ekle, commit, push -f ile Githuba gönder
 git status 
+# git add -A   add all files
 git add README.md 
 git commit -m "commit 6"
 git push -f origin main
-*****************************
+**********************************
+
 
 //git push ... Use web browser for Github authentication 
 // dosyaları resetlemek için 

@@ -83,7 +83,7 @@ else:
     first_gold_list.append(["PD", "PALLADIUM", price])
     panda_gold_df1 = pd.DataFrame(first_gold_list)
     # rename column header names in Panda Data Frame
-    panda_gold_df1.columns = ['Symbol', 'Name', 'OldValue']
+    panda_gold_df1.columns = ['Symbol', 'Name', 'FirstValue']
     print("")
     print(gold_date1.strftime('%d.%m.%Y'), "first Gold and Silver data url : ", gold_url + gold_firstdate)
 
@@ -103,7 +103,7 @@ else:
     last_gold_list.append(["PD", "PALLADIUM", price])
     panda_gold_df2 = pd.DataFrame(last_gold_list)
     # rename column header names in Panda Data Frame    
-    panda_gold_df2.columns = ['Symbol', 'Name 2', 'NewValue']
+    panda_gold_df2.columns = ['Symbol', 'Name 2', 'LastValue']
     # delete unnecessary column in Pandas Data Frame
     del panda_gold_df2["Name 2"]
     print(gold_date2.strftime('%d.%m.%Y'), "last Gold and Silver data url : ", gold_url +  gold_lastdate)
@@ -112,9 +112,9 @@ else:
 if (param.firstdate) and (param.lastdate):
     result_gold_df = pd.merge(panda_gold_df1, panda_gold_df2, how="left", on=["Symbol"])
     # create calculated column in Pandas Data Frame,  1 Ounce = 31.103 Grams
-    result_gold_df["First 1 Gram USD"] = (result_gold_df['NewValue'].astype(float) / 31.103)
-    result_gold_df["Last 1 Gram USD"] = (result_gold_df['OldValue'].astype(float) / 31.103)
-    result_gold_df['% (+|-)'] = ((result_gold_df['NewValue'].astype(float) / result_gold_df['OldValue'].astype(float) ) -1) *100
+    result_gold_df["First 1 Gram USD"] = (result_gold_df['FirstValue'].astype(float) / 31.103)
+    result_gold_df["Last 1 Gram USD"] = (result_gold_df['LastValue'].astype(float) / 31.103)
+    result_gold_df['% (+|-)'] = ((result_gold_df['LastValue'].astype(float) / result_gold_df['FirstValue'].astype(float) ) -1) *100
     print("1 Ounce = 31.103 Grams")
     print("")
     print(tabulate(result_gold_df, headers=["Symbol", "Name", "First 1 Ounce USD", "Last 1 Ounce USD", "First 1 Gram USD","Last 1 Gram USD", '% (+|-)'], tablefmt="simple", numalign="right"))
@@ -122,7 +122,7 @@ if (param.firstdate) and (param.lastdate):
 
 if (param.firstdate) and (not param.lastdate):
     # create calculated column in Pandas Data Frame,  1 Ounce = 31.103 Grams
-    panda_gold_df1["1 Gram USD"] = (panda_gold_df1['OldValue'].astype(float) / 31.103)
+    panda_gold_df1["1 Gram USD"] = (panda_gold_df1['FirstValue'].astype(float) / 31.103)
     print("1 Ounce = 31.103 Grams")
     print("")
     print(tabulate(panda_gold_df1, headers=["Symbol", "Name", "1 Ounce USD", "1 Gram USD"], tablefmt="simple", numalign="right"))
