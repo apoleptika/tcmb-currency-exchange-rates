@@ -37,3 +37,4 @@ Gold and Silver example:
     <img alt="Gold and Silver prices" src="https://github.com/apoleptika/tcmb-currency-exchange-rates/blob/main/gold-silver-prices.png">
 </picture>
 
+Aldin Romanov Aldinov
